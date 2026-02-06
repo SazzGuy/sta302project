@@ -22,3 +22,23 @@ head(data)
 ```{r}
 summary(data)
 ```
+
+
+```{r}
+# cleaning
+data <- data |> drop_na(popularity)
+
+nrow(data)
+```
+
+```{r}
+names(data)
+```
+
+
+```{r}
+library(ggplot2)
+
+ggplot(data, aes(liveness, popularity)) + geom_point()
+```
+
