@@ -3,3 +3,22 @@ title: "main"
 output: html_document
 ---
 
+```{r setup}
+install.packages("tidyverse")
+```
+
+```{r setup}
+library(tidyverse)
+library(readr)
+```
+
+
+```{r}
+data <- read_csv("dataset.csv")
+head(data)
+```
+
+
+```{r}
+summary(data)
+```
